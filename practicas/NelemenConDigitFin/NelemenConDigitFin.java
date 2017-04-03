@@ -38,6 +38,7 @@ public static void main(String[] args){
 		System.out.printf(numerosElegidos[i]+", ");        
 	}
 
+
 	for (i = 0; i < n; i++) {
 		if(numerosElegidos[i]%10==x)
 		    System.out.println("Incidencias de x, que es el numero de fin de cifra "+numerosElegidos[i]);        

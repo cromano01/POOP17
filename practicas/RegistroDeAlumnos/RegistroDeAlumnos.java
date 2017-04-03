@@ -4,8 +4,9 @@ public class RegistroDeAlumnos {
 
   
     public static void main(String[] args) {
+    	InputStreamReader isr = new InputStreamReader(System.in);
+BufferedReader br = new BufferedReader (isr);
 
-    	Scanner in =new Scanner(System.in);
     	//Scanner calilfk=new Scanner(System.in);
 
         /*Almacenar la calificación de 10 alumnos; en un arreglo de enteros insertar calificaciones
