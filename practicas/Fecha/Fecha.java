@@ -10,7 +10,7 @@ public class Fecha {
     private int Anio;
     private int MesInt;
     private int NMes;
-
+    private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     //Constructor por defecto
     public Fecha() {
     }
@@ -191,6 +191,34 @@ public class Fecha {
         EstablecerMesInt(fechaSistema.get(Calendar.MONTH));
         EstablecerAnio(fechaSistema.get(Calendar.YEAR));
     }
+
+        public String leeString() {
+        try{
+            this.dato = br.readLine();
+        } catch(IOException e) {
+        }
+
+        return this.dato;
+    }
+
+    public float leeFloat() {
+        try{
+            return Float.valueOf(br.readLine());
+        } catch(IOException e) {
+        }
+
+        return 0.0F;
+    }
+
+    public int leeInt() {
+        try{
+            return Integer.valueOf(br.readLine());
+        } catch(IOException e) {
+        }
+
+        return 0;
+    }
+}
 }
  //Termina clase Fecha
 
